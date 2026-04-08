@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Adds a sortable Slug column to the admin list tables for Posts, Pages, and Custom Post Types.
+Display slug columns for Posts, Pages, and Custom Post Types in your WordPress admin with sortable columns and per-type control.
 
 == Description ==
 

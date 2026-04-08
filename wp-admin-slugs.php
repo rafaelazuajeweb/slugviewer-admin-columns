@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Admin Slugs
  * Plugin URI:  https://celeryagency.com/
- * Description: Adds a sortable Slug column to the admin list tables for Posts, Pages, and Custom Post Types. Configure which post types show the column from Settings.
+ * Description: Display slug columns for Posts, Pages, and Custom Post Types in your WordPress admin with sortable columns and per-type control.
  * Version:     1.0.0
  * Author:      Celery Software LLC
  * Author URI:  https://celeryagency.com/
