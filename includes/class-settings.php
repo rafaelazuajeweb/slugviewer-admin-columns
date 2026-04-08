@@ -11,16 +11,38 @@ class ASP_Settings {
 		add_action( 'admin_menu', array( $this, 'add_menu' ) );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_styles' ) );
+		add_filter( 'plugin_action_links_' . plugin_basename( ASP_PLUGIN_FILE ), array( $this, 'add_action_links' ) );
 	}
 
+	/**
+	 * Add top-level menu page with link icon.
+	 */
 	public function add_menu() {
-		$this->page_hook = add_options_page(
+		$this->page_hook = add_menu_page(
 			__( 'WP Admin Slugs', 'wp-admin-slugs' ),
 			__( 'WP Admin Slugs', 'wp-admin-slugs' ),
 			'manage_options',
 			'wp-admin-slugs',
-			array( $this, 'render_page' )
+			array( $this, 'render_page' ),
+			'dashicons-admin-links',
+			81
 		);
+	}
+
+	/**
+	 * Add Settings link on the plugins list page.
+	 *
+	 * @param array $links Existing action links.
+	 * @return array Modified action links.
+	 */
+	public function add_action_links( $links ) {
+		$settings_link = sprintf(
+			'<a href="%s">%s</a>',
+			esc_url( admin_url( 'admin.php?page=wp-admin-slugs' ) ),
+			esc_html__( 'Settings', 'wp-admin-slugs' )
+		);
+		array_unshift( $links, $settings_link );
+		return $links;
 	}
 
 	public function register_settings() {
@@ -77,7 +99,7 @@ class ASP_Settings {
 		?>
 		<div class="asp-wrap">
 			<div class="asp-header">
-				<h1><?php esc_html_e( 'Admin Slug Pages', 'wp-admin-slugs' ); ?></h1>
+				<h1><?php esc_html_e( 'WP Admin Slugs', 'wp-admin-slugs' ); ?></h1>
 				<span class="asp-version"><?php echo esc_html( 'v' . ASP_VERSION ); ?></span>
 			</div>
 			<p class="asp-description">
