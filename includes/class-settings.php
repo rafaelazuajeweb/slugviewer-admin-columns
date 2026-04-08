@@ -15,10 +15,10 @@ class ASP_Settings {
 
 	public function add_menu() {
 		$this->page_hook = add_options_page(
-			__( 'Admin Slug Pages', 'admin-slug-pages' ),
-			__( 'Admin Slug Pages', 'admin-slug-pages' ),
+			__( 'WP Admin Slugs', 'wp-admin-slugs' ),
+			__( 'WP Admin Slugs', 'wp-admin-slugs' ),
 			'manage_options',
-			'admin-slug-pages',
+			'wp-admin-slugs',
 			array( $this, 'render_page' )
 		);
 	}
@@ -77,18 +77,18 @@ class ASP_Settings {
 		?>
 		<div class="asp-wrap">
 			<div class="asp-header">
-				<h1><?php esc_html_e( 'Admin Slug Pages', 'admin-slug-pages' ); ?></h1>
+				<h1><?php esc_html_e( 'Admin Slug Pages', 'wp-admin-slugs' ); ?></h1>
 				<span class="asp-version"><?php echo esc_html( 'v' . ASP_VERSION ); ?></span>
 			</div>
 			<p class="asp-description">
-				<?php esc_html_e( 'Display a sortable Slug column in your admin list tables. Enable it for each post type below.', 'admin-slug-pages' ); ?>
+				<?php esc_html_e( 'Display a sortable Slug column in your admin list tables. Enable it for each post type below.', 'wp-admin-slugs' ); ?>
 			</p>
 
 			<form method="post" action="options.php">
 				<?php settings_fields( 'asp_settings_group' ); ?>
 
 				<div class="asp-card">
-					<h2 class="asp-card-title"><?php esc_html_e( 'Post Types', 'admin-slug-pages' ); ?></h2>
+					<h2 class="asp-card-title"><?php esc_html_e( 'Post Types', 'wp-admin-slugs' ); ?></h2>
 
 					<?php foreach ( $post_types as $slug => $type_obj ) :
 						$count    = wp_count_posts( $slug );
@@ -124,14 +124,14 @@ class ASP_Settings {
 					<?php endforeach; ?>
 				</div>
 
-				<?php submit_button( __( 'Save Changes', 'admin-slug-pages' ), 'asp-save-btn', 'submit', false ); ?>
+				<?php submit_button( __( 'Save Changes', 'wp-admin-slugs' ), 'asp-save-btn', 'submit', false ); ?>
 			</form>
 
 			<div class="asp-footer">
 				<p>
 					<?php
 					printf(
-						esc_html__( 'Made by %s', 'admin-slug-pages' ),
+						esc_html__( 'Made by %s', 'wp-admin-slugs' ),
 						'<a href="https://celeryagency.com/" target="_blank" rel="noopener noreferrer">Celery Software LLC</a>'
 					);
 					?>

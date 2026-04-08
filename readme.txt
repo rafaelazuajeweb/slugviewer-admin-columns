@@ -1,4 +1,4 @@
-=== Admin Slug Pages ===
+=== WP Admin Slugs ===
 Contributors: celerysoftware
 Tags: slug, admin columns, post slug, page slug, custom post types
 Requires at least: 5.8
@@ -12,7 +12,7 @@ Adds a sortable Slug column to the admin list tables for Posts, Pages, and Custo
 
 == Description ==
 
-**Admin Slug Pages** adds a clean, sortable "Slug" column to your WordPress admin list tables — for Posts, Pages, and any Custom Post Type on your site.
+**WP Admin Slugs** adds a clean, sortable "Slug" column to your WordPress admin list tables — for Posts, Pages, and any Custom Post Type on your site.
 
 **Key Features:**
 
@@ -22,13 +22,13 @@ Adds a sortable Slug column to the admin list tables for Posts, Pages, and Custo
 * Sortable column — click to sort alphabetically by slug
 * Draft/Pending/Scheduled posts show greyed-out slugs
 * Appears in Screen Options for per-user visibility control
-* Clean, branded settings page under Settings > Admin Slug Pages
+* Clean, branded settings page under Settings > WP Admin Slugs
 * Lightweight — no JavaScript frameworks, no external API calls, no tracking
 * Zero frontend impact — runs only in wp-admin
 
 **Why This Plugin?**
 
-Most slug column plugins either lack a settings page or are bloated with unnecessary features and telemetry. Admin Slug Pages gives you the control you need with a clean interface and zero overhead.
+Most slug column plugins either lack a settings page or are bloated with unnecessary features and telemetry. WP Admin Slugs gives you the control you need with a clean interface and zero overhead.
 
 **Perfect For:**
 
@@ -41,7 +41,7 @@ Most slug column plugins either lack a settings page or are bloated with unneces
 
 1. Upload the `admin-slug-pages` directory to `/wp-content/plugins/`
 2. Activate the plugin through the Plugins menu in WordPress
-3. Go to Settings > Admin Slug Pages to configure which post types show the Slug column
+3. Go to Settings > WP Admin Slugs to configure which post types show the Slug column
 4. Posts and Pages are enabled by default
 
 == Frequently Asked Questions ==

@@ -39,7 +39,7 @@ class ASP_Columns {
 		foreach ( $columns as $key => $label ) {
 			$new_columns[ $key ] = $label;
 			if ( 'title' === $key ) {
-				$new_columns['asp_slug'] = esc_html__( 'Slug', 'admin-slug-pages' );
+				$new_columns['asp_slug'] = esc_html__( 'Slug', 'wp-admin-slugs' );
 			}
 		}
 
