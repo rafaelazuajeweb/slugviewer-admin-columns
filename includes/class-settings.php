@@ -132,7 +132,7 @@ class ASP_Settings {
 					<?php
 					printf(
 						esc_html__( 'Made by %s', 'admin-slug-pages' ),
-						'<a href="https://celeryagency.com/" target="_blank" rel="noopener noreferrer">Celery Software</a>'
+						'<a href="https://celeryagency.com/" target="_blank" rel="noopener noreferrer">Celery Software LLC</a>'
 					);
 					?>
 				</p>
