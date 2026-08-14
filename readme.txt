@@ -1,18 +1,18 @@
-=== WP Admin Slugs ===
+=== SlugViewer – Slugs in Admin Columns ===
 Contributors: celerysoftware
 Tags: slug, admin columns, post slug, page slug, custom post types
 Requires at least: 5.8
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Display slug columns for Posts, Pages, and Custom Post Types in your WordPress admin with sortable columns and per-type control.
+Show sortable slug columns for posts, pages, media, and custom post types, with simple per-type controls.
 
 == Description ==
 
-**WP Admin Slugs** adds a clean, sortable "Slug" column to your WordPress admin list tables — for Posts, Pages, and any Custom Post Type on your site.
+**SlugViewer** adds a clean, sortable "Slug" column to your WordPress admin list tables — for Posts, Pages, Media, and any Custom Post Type on your site.
 
 **Key Features:**
 
@@ -22,13 +22,13 @@ Display slug columns for Posts, Pages, and Custom Post Types in your WordPress a
 * Sortable column — click to sort alphabetically by slug
 * Draft/Pending/Scheduled posts show greyed-out slugs
 * Appears in Screen Options for per-user visibility control
-* Clean, branded settings page under Settings > WP Admin Slugs
+* Clean settings page in the SlugViewer menu
 * Lightweight — no JavaScript frameworks, no external API calls, no tracking
 * Zero frontend impact — runs only in wp-admin
 
 **Why This Plugin?**
 
-Most slug column plugins either lack a settings page or are bloated with unnecessary features and telemetry. WP Admin Slugs gives you the control you need with a clean interface and zero overhead.
+SlugViewer gives you per-post-type control with a clean interface and no unnecessary overhead.
 
 **Perfect For:**
 
@@ -39,9 +39,9 @@ Most slug column plugins either lack a settings page or are bloated with unneces
 
 == Installation ==
 
-1. Upload the `admin-slug-pages` directory to `/wp-content/plugins/`
+1. Upload the `slugviewer-admin-columns` directory to `/wp-content/plugins/`
 2. Activate the plugin through the Plugins menu in WordPress
-3. Go to Settings > WP Admin Slugs to configure which post types show the Slug column
+3. Open SlugViewer in the admin menu to configure which post types show the Slug column
 4. Posts and Pages are enabled by default
 
 == Frequently Asked Questions ==
@@ -69,10 +69,22 @@ Yes! Click the Slug column header to sort alphabetically, just like sorting by T
 == Screenshots ==
 
 1. Slug column displayed in the Pages list with sortable header
-2. Settings page with per-post-type toggle switches
-3. Slug column in Screen Options checkbox
+2. Slug column displayed in the Posts list
+3. Slug checkbox in Screen Options panel
+4. Settings page with per-post-type toggle switches
 
 == Changelog ==
+
+= 1.0.2 =
+* Renamed the plugin to SlugViewer – Slugs in Admin Columns
+* Updated the plugin slug, text domain, and identifiers for WordPress.org review
+* Added automatic migration from previous option names
+
+= 1.0.1 =
+* Improved compatibility with WordPress coding standards
+* Added working Slug columns for the Media list screen
+* Improved accessibility of post type toggles
+* Fixed draft, pending, and scheduled slug styling
 
 = 1.0.0 =
 * Initial release
